@@ -43,7 +43,6 @@ int knapSack(int weights[], int values[], int selected_bool[]) {
 int main() {
     int weights[MAX_ITEMS], values[MAX_ITEMS], selected_bool[MAX_ITEMS] = {0};
 
-    // Input weights and values from the user
     printf("Enter weights and values for 5 items:\n");
     for (int i = 0; i < MAX_ITEMS; i++) {
         if(i==0){
@@ -98,11 +97,8 @@ int main() {
             }
             if(i==4){
                 printf("e ");
-            }
+            }   
         }
     }
-
-    
-
     return 0;
 }
