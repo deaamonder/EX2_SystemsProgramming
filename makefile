@@ -32,7 +32,7 @@ $(TARGET1) : libclassloops.a $(HEADER) $(SOURCE) $(SOURCE2) $(SOURCE3)
 maindloop : libclassloops.so $(HEADER) $(SOURCE) $(SOURCE2) $(SOURCE3)
 	$(CC) $(CF) -o maindloop $(SOURCE) $(SOURCE2) $(SOURCE3) -L. -lclassloops -lm
 
-all : $(TARGET1	)
+all : mains
 
 .PHONY: all clean
 

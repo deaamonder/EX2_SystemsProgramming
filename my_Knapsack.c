@@ -46,10 +46,36 @@ int main() {
     // Input weights and values from the user
     printf("Enter weights and values for 5 items:\n");
     for (int i = 0; i < MAX_ITEMS; i++) {
-        printf("Item %d - Weight: ", i+1);
-        scanf("%d", &weights[i]);
-        printf("Item %d - Value: ", i+1);
-        scanf("%d", &values[i]);
+        if(i==0){
+            printf("Item a - Value: ");
+            scanf("%d", &values[i]);
+            printf("Item a - Weight: ");
+            scanf("%d", &weights[i]);
+        }
+        if(i==1){
+            printf("Item b - Value: ");
+            scanf("%d", &values[i]);
+            printf("Item b - Weight: ");
+            scanf("%d", &weights[i]);
+        }
+        if(i==2){
+            printf("Item c - Value: ");
+            scanf("%d", &values[i]);
+            printf("Item c - Weight: ");
+            scanf("%d", &weights[i]);
+        }
+        if(i==3){
+            printf("Item d - Value: ");
+            scanf("%d", &values[i]);
+            printf("Item d - Weight: ");
+            scanf("%d", &weights[i]);
+        }
+        if(i==4){
+            printf("Item e - Value: ");
+            scanf("%d", &values[i]);
+            printf("Item e - Weight: ");
+            scanf("%d", &weights[i]);
+        }
     }
 
     int maxValue = knapSack(weights, values, selected_bool);
@@ -58,7 +84,21 @@ int main() {
     printf("\nItems that give the maximum profit: ");
     for (int i = 0; i < MAX_ITEMS; i++) {
         if (selected_bool[i]) {
-            printf("%d ", i+1);
+            if(i==0){
+                printf("a ");
+            }
+            if(i==1){
+                printf("b ");
+            }
+            if(i==2){
+                printf("c ");
+            }
+            if(i==3){
+                printf("d ");
+            }
+            if(i==4){
+                printf("e ");
+            }
         }
     }
 
